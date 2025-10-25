@@ -11,12 +11,24 @@ Blazer, Blouse, Cardigan, Dress, Hoodie, Jacket, Jeans, Joggers, Jumpsuit, Leggi
 ### Attributes
 floral, graphic, striped, embroidered, solid, long_sleeve, short_sleeve, sleeveless, maxi_length, mini_length, crew_neckline, v_neckline, denim, chiffon, cotton, knit, tight, loose
 
+For more information on results and findings, please refer to this For more information on results and findings, please refer to this 
+<a href="Fashion Classifier_presentation.pdf" target="_blank">presentation</a>.
+
+
 ---
+
+## Live Demo
+
+Click [here](https://huggingface.co/spaces/bruna-cussiol/fashion) to see the app in action.
+
+![App Screenshot](screenshot\app_interface.png)
+
 
 ## Dataset & Preprocessing
 
 The dataset was **balanced using undersampling and oversampling** to reduce bias in the training set.  
 Preprocessing involved **iterative cleaning, filtering, and augmentations**, which are not included here, but the **final prepared dataset** is provided for training and evaluation.
+The filtered dataset can be found [here](https://drive.google.com/file/d/16yYsyLpMAss0jQp9wFBAPzwALtfNFTlC/view?usp=drive_link).
 
 ---
 
@@ -41,28 +53,9 @@ All model-building functions are defined in `src/utils_model.py`.
 
 ---
 
-## Screenshot
-
-Below is a placeholder for a **screenshot of the app interface**:
-
-![App Screenshot](path_to_screenshot.png)
-
-> Replace `path_to_screenshot.png` with the relative path to your screenshot file.
-
----
-
 ## Requirements
 
 - Python 3.8+
 - TensorFlow 2.x
 - NumPy, Pandas, scikit-learn
-- (Optional) Gradio for demo interfaces
-
----
-
-## Usage
-
-1. Clone the repo and navigate to the project folder.
-2. Prepare the dataset as described in the `annotations/` folder.
-3. Train the model using the provided scripts.
-4. Use the inference scripts in `src/` to predict categories and attributes on new images.
+- Gradio for demo interfaces
