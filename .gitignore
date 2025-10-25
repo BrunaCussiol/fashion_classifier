@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Gradio cache / temp files
+gradio_workspace/
+*.gradio
+
+# System files
+.DS_Store
+
+img_filtered.zip

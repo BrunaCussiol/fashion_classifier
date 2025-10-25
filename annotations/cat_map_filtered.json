@@ -1,0 +1,18 @@
+{
+    "Blazer": 0,
+    "Blouse": 1,
+    "Cardigan": 2,
+    "Dress": 3,
+    "Hoodie": 4,
+    "Jacket": 5,
+    "Jeans": 6,
+    "Joggers": 7,
+    "Jumpsuit": 8,
+    "Leggings": 9,
+    "Romper": 10,
+    "Shorts": 11,
+    "Skirt": 12,
+    "Sweater": 13,
+    "Tee": 14,
+    "Top": 15
+}

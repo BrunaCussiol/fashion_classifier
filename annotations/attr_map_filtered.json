@@ -1,0 +1,20 @@
+{
+    "floral": 0,
+    "graphic": 1,
+    "striped": 2,
+    "embroidered": 3,
+    "solid": 4,
+    "long_sleeve": 5,
+    "short_sleeve": 6,
+    "sleeveless": 7,
+    "maxi_length": 8,
+    "mini_length": 9,
+    "crew_neckline": 10,
+    "v_neckline": 11,
+    "denim": 12,
+    "chiffon": 13,
+    "cotton": 14,
+    "knit": 15,
+    "tight": 16,
+    "loose": 17
+}
