@@ -1,0 +1,10 @@
+# Gradio
+gradio>=3.40
+
+# TensorFlow and Keras
+tensorflow==2.20.0
+keras==3.10.0
+
+# Utility libraries
+numpy
+pillow

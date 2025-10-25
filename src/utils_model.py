@@ -10,6 +10,7 @@ from tensorflow.keras.metrics import (
     Recall
 )
 
+@tf.keras.utils.register_keras_serializable()
 class BalancedAccuracy(tf.keras.metrics.Metric):
     def __init__(self, num_classes, name="balanced_accuracy", **kwargs):
         super().__init__(name=name, **kwargs)

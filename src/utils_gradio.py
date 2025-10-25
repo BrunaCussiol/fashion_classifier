@@ -1,10 +1,11 @@
-
 import numpy as np
 from PIL import Image
 from .utils_model import build_multitask_efficientnet
 from .inference import predict_multitask
 import json
 from pathlib import Path
+import tempfile
+import os
 
 # ------------------------- Load maps -------------------------
 cat_map_path = Path.cwd() / "annotations/cat_map_filtered.json"
@@ -36,21 +37,21 @@ def gradio_predict(img, attr_threshold=0.5):
     """
     Run multitask prediction on an uploaded image and return human-readable results.
 
-    Args:
-        img (PIL.Image or np.array): Image uploaded by the user.
-        attr_threshold (float): Threshold to consider an attribute as present.
-
-    Returns:
-        str: Text summarizing predicted category and attributes.
+    Works on Windows, Linux, and Colab.
     """
-    # If input is a PIL image, save temporarily to path for predict_multitask
-    if isinstance(img, Image.Image):
-        img_path = "/tmp/gradio_input.jpg"
-        img.save(img_path)
-    else:
-        img_path = img  # Assume it's already a path
+    # 1. Convert input to PIL.Image
+    if not isinstance(img, Image.Image):
+        img = Image.open(img)
+    img = img.convert("RGB")
+    img = img.resize((224, 224))
 
-    # Run prediction
+    # 2. Save temp file in cross-platform way
+    tmp_dir = Path(tempfile.gettempdir())  # System temp folder
+    tmp_dir.mkdir(exist_ok=True)
+    img_path = tmp_dir / "gradio_input.jpg"
+    img.save(img_path)  # Safe on all platforms
+
+    # 3. Run prediction
     pred = predict_multitask(
         model=model,
         img_path=img_path,
@@ -60,10 +61,10 @@ def gradio_predict(img, attr_threshold=0.5):
         attr_map=attr_map
     )
 
-    # Map category
+    # 4. Map category
     category_name = cat_map[pred["predicted_category"]]
 
-    # Map attributes
+    # 5. Map attributes
     attribute_list = [
         attr_map[i] for i, val in enumerate(pred["predicted_attributes"]) if val == 1
     ]
