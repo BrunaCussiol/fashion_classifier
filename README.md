@@ -11,8 +11,8 @@ Blazer, Blouse, Cardigan, Dress, Hoodie, Jacket, Jeans, Joggers, Jumpsuit, Leggi
 ### Attributes
 floral, graphic, striped, embroidered, solid, long_sleeve, short_sleeve, sleeveless, maxi_length, mini_length, crew_neckline, v_neckline, denim, chiffon, cotton, knit, tight, loose
 
-For more information on results and findings, please refer to this For more information on results and findings, please refer to this 
-<a href="Fashion Classifier_presentation.pdf" target="_blank">presentation</a>.
+
+For more information on results and findings, please refer to this <a href="Fashion Classifier_presentation.pdf" target="_blank">presentation</a>.
 
 
 ---
@@ -21,7 +21,7 @@ For more information on results and findings, please refer to this For more info
 
 Click [here](https://huggingface.co/spaces/bruna-cussiol/fashion) to see the app in action.
 
-![App Screenshot](screenshot\app_interface.png)
+![App Screenshot](screenshot\\app_interface.png)
 
 
 ## Dataset & Preprocessing
