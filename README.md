@@ -21,7 +21,7 @@ For more information on results and findings, please refer to this <a href="Fash
 
 Click [here](https://huggingface.co/spaces/bruna-cussiol/fashion) to see the app in action.
 
-![App Screenshot](screenshot\\app_interface.png)
+<img src="screenshot/app_interface.png" alt="App Screenshot" width="600">
 
 
 ## Dataset & Preprocessing
