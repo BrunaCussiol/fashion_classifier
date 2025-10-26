@@ -2,7 +2,10 @@
 
 ## Overview
 
-This project is a **computer vision model** designed to predict both **clothing categories** and **visual attributes** from images.  
+This project is a **computer vision model** designed to predict both **clothing categories** and **visual attributes** from images. 
+
+>*🎓 Educational Project*: Created as the capstone project for the [Applied AI Bootcamp (July 2025) at AllWomen](https://learn.allwomen.tech/ai-bootcamp-request-more-info?utm_term=allwomen&utm_campaign=&utm_source=google&utm_medium=paid&hsa_acc=2544626250&hsa_cam=22674345052&hsa_grp=186612374091&hsa_ad=757970233174&hsa_src=g&hsa_tgt=kwd-315103366955&hsa_kw=allwomen&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22674345052&gbraid=0AAAAAC7KFpXZfLFmgyHL10ovSkoIxJAC1&gclid=CjwKCAjwjffHBhBuEiwAKMb8pMGxvaq3WU4F4GHTMA9yDHfltkYCUZe3T2T4gs4MSPLX0KX6JqmWnBoCvFkQAvD_BwE), this work explores the use of **Transfer Learning** to address real-world **Computer Vision** challenges.
+
 It uses a **filtered subset** of the **DeepFashion dataset**, focusing on **16 categories** and **18 attributes**.
 
 ### Categories
