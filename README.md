@@ -41,7 +41,7 @@ The model is a **multi-task EfficientNetB0** implemented in TensorFlow/Keras (in
 - **Shared backbone**: EfficientNetB0 pretrained on ImageNet for feature extraction.
 - **Category head**: Softmax classifier for 16 clothing categories.
 - **Attribute head**: Sigmoid layer for multi-label classification of 18 attributes.
-- **Custom metric**: Balanced Accuracy for category classification, alongside standard metrics like accuracy, AUC, precision, and recall.
+- **Custom metric**: Balanced Accuracy for category classification, alongside standard metrics like accuracy, AUC, precision, and recall for attribute classification.
 
 All model-building functions are defined in `src/utils_model.py`.
 
@@ -49,7 +49,7 @@ All model-building functions are defined in `src/utils_model.py`.
 
 ## Training & Evaluation
 
-- The model is trained on the filtered dataset, optimizing **category and attribute losses simultaneously**.
+- The model leverages transfer learning with a frozen EfficientNetB0 backbone, while jointly training two custom classification heads to predict both category and attribute outputs.
 - Evaluation is performed on a separate test set to measure **generalization performance**.
 - Weights from training are saved for inference and further evaluation.
 
