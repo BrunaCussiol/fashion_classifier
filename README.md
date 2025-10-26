@@ -67,10 +67,10 @@ All model-building functions are defined in `src/utils_model.py`.
 
 ## ⚠️ Limitations and Future Improvements
 
-As part of the project’s ongoing development, several areas have been identified to enhance the model’s reliability, fairness, and predictive accuracy:
+As part of the project’s ongoing development, several areas have been identified to enhance the model’s reliability, fairness, and predictive accuracy. During evaluation, we also observed instances of **misclassified samples**, which may compromise overall performance and highlight the need for further data refinement.
 
 - **Improve data reliability**  
-  Collect a larger, more diverse, and representative dataset to reduce bias and improve generalization.
+  Collect a larger, more diverse, and representative dataset to reduce bias, correct misclassified samples, and improve generalization.
 
 - **Address class imbalance**  
   Refine training strategies to better handle under-represented classes or attributes (e.g., through weighted loss functions, data augmentation, or resampling).
