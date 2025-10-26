@@ -58,7 +58,8 @@ All model-building functions are defined in `src/utils_model.py`.
 ## Requirements
 
 - Python 3.12+
-- TensorFlow 2.x
+- TensorFlow 2.20
+- Keras 3.10.0
 - NumPy, Pandas, scikit-learn
 - Gradio for demo interfaces
 
